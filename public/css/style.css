@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    /* outline: none; */
+    outline-color: #0bc7f7;
+}
+
+body, html {
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    background: #fdfdfd;
+}
+:root {
+    --primary: #7e2403;
+    --secondary: #000025;
+    --linear: background-image: linear-gradient(to right, #000025, #000025);
+}
+
+p {
+    color: #818181;
+}
+
+
+
+/*  */
+.btn-btn {
+    border: none;
+    border: solid 1.5px #fff;
+    background: #7e2403;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-btn:hover {
+    color: #7e2403;
+    background-color: #fff;
+    border: solid 1px #7e2403;
+    text-decoration: none;
+}
+
+/* Header 
+=========================================*/
+.landing img{
+    height: 110vh;
+}
+header {
+    margin-bottom: 5rem;
+}
+
+header nav{
+    background: rgba(255, 255, 255, 0.952);
+    border-bottom: solid 3px var(--primary);
+    box-shadow: 0px 5px 30px 20px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand h1{
+    color: #333;
+}
+.navbar-brand .tag {
+    color: #0bc7f7;
+    font-weight: bold;
+}
+nav a{
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+nav .nav-link:hover {
+    color: #0bc7f7;
+    /* font-weight: bold; */
+    border-bottom: solid 1px #333;
+}
+
+
+.carousel-caption {
+    margin-bottom: 15rem;
+}
+.carousel-caption h1 {
+    font-size: 3rem;
+}
+
+
+/*  BIBLE STUDY
+================================================================ */
+.bible_study {
+    background-color: #000025;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.bible_study h4 {
+    color: chocolate;
+}
+.bible-qoute {
+    border-right: solid 2px #0bc7f7;
+}
+
+.bible-qoute p {
+    font-size: 0.9rem;
+    color: #e9e9e9;
+}
+
+
+
+.welcome img {
+    max-height: 320px;
+    width: 500px
+}
+.welcome a {
+    color: #020e31;
+    font-size: 1rem;
+    transition: all 500ms ease-in;
+}
+.welcome a:hover i{
+    font-size: 1.4rem;
+}
+.welcome a:hover {
+    text-decoration: none;
+}
+
+.heading {
+    text-align: center;
+}
+.heading h1 {
+    text-transform: uppercase;
+    margin: 5rem 0 1rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* QUOTE
+================================================= */
+.quote {
+    position: relative;
+    height: 200px;
+    background-color: #fdf1f1;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.quote p:last-child{
+    color: darkkhaki;
+    font-weight: bold;
+}
+
+/* Cards
+================================================== */
+.card {
+    max-width: 350px;
+    margin: auto;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+.card-body {
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 25px;
+}
+.card-title  a{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+.card-title a:hover {
+    color: #0bc7f7;
+    text-decoration: none;
+}
+.card-text a{
+    color: #0bc7f7;
+    text-decoration: none;
+}
+.card-text a:hover{
+    color: #0bc7f7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* .socail-feeds .facebook, .twitter, .gmail{
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    padding: 12px 15px;
+    border-radius: 50%;
+}
+.socail-feeds a:hover {
+    background: #0bc7f7;
+    color: #fff;
+} */
+/* .socail-feeds a{
+    color: #444444;
+}
+.socail-feeds a:hover {
+    color: #fff;
+} */
+
+/* = Events Heading
+==================================================== */
+.events {
+    margin-top: 7rem;
+}
+.overlay {
+    height: 35vh;
+    width: 100%;
+    background: url('/img/church/sermon_2.jpg') center/cover fixed no-repeat;
+    color: #fff;
+    font-weight: bold;
+}
+
+.overlay .event-heading {
+    background: rgba(0, 0,0,0.7);
+    height: 100%;
+    width: 100%;
+}
+
+.event-heading .text {
+    padding: 3rem 0 0 4rem;
+}
+.event-heading .text h1 {
+    text-transform: uppercase;
+    color: #000;
+}
+
+.events .location a{
+    color: #8a8989;
+}
+.events h4 {
+    color: #333;
+}
+
+/* Newsletter 
+============================================*/
+.newsletter {
+    /* background: var(--secondary); */
+    background-image: linear-gradient(to right, #000025, #37376d);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.newsletter input {
+    border-radius: 2px;
+}
+
+.newsletter input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #505050;
+    border: none;
+
+}
+.newsletter input::placeholder {
+    font-size: 1.3rem;
+}
+
+.newsletter input[type="submit"] {
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #fff;
+    border: none;
+}
+.newsletter h3{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Donate
+========================================= */
+.donate {
+    background: url('/img/donate.jpg') center/cover fixed no-repeat;
+}
+ .donate-overlay {
+    background: rgba(0, 0,0,0.9);
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+}
+/* .donate .card h4 {
+    font-weight: bold;
+} */
+
+.donate .card {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 25px;
+}
+
+.donate .card h1, h4{
+    color: #333;
+}
+.btn-donate1 {
+    text-decoration: none;
+    background: #fff;
+    color: #333;
+    padding: 5px;
+    width: 25%;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-donate2 {
+    text-decoration: none;
+    background: #fff;
+    color: #333;
+    padding: 5px;
+    width: 45%;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-donate1:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffcdcd;
+    border-radius: 3px;
+}
+.btn-donate2:hover {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffcdcd;
+    border-radius: 3px;
+}
+
+#card1 {
+    background: #036891;
+}
+#card2 {
+    background: #1da2d6;
+}
+
+#card3 {
+    background: #3dade0e7;
+}
+
+/* GALLERY
+================================================ */
+
+.jumbotron {
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.bg-contact {
+    background: url('/img/church/conatct2.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+.bg-about h1, p {
+    text-align: left;
+}
+
+.bg-gallery {
+    background: url('/img/bg.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+
+.bg-store {
+    background: url('/img/church/book.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+
+.bg-sermon {
+    background: url('/img/sermon.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+    text-align: left;
+    color: #eee;
+}
+
+
+.gallery-img img {
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-img img:hover{
+    transform: rotate(10deg);
+    border-top-left-radius:  30px;
+    border-bottom-right-radius:  30px;
+}
+
+
+/* About us
+============================================== */
+.m-v {
+    /* background: #f5f5f5; */
+    background: url('/img/church/m-v.jpg') center/cover fixed no-repeat;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4rem 0;
+}
+
+.bg-about {
+    background: url('/img/church/about_3.jpg') center/cover fixed no-repeat;
+}
+
+.m-v h3{
+    font-weight: bold;
+    color: rgb(69, 161, 236);
+    border-bottom: dashed 2px #fff;
+    border-left: dashed 2px #fff;
+    border-right: dashed 2px #fff;
+}
+.m-v p {
+    color: #ececec;
+    margin-top: 1rem;
+}
+
+.fund {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+.fund h3 {
+    font-weight: bold;
+    color: #d2691e;
+}
+
+.aims {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    background: #ececec;
+    border-top-right-radius: 200px;
+}
+.aims h3 {
+    font-weight: bold;
+    color: #d2691e;
+}
+
+/* Sermons  
+================================================ */
+.sermon .title {
+    text-align: center;
+    margin: 3rem 0;
+}
+.sermon .title h6, h1{
+    font-weight: bold;
+}
+.sermon .title h6 {
+    color: chocolate;
+}
+.sermon .bg-ligh {
+    background: #f5f4f4;
+    height: 80vh;
+}
+
+.sermon .topic {
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+.sermon .topic p {
+    text-transform: capitalize;
+}
+
+.topic .name, .titl, .date {
+    font-weight: bold;
+    color: #333;
+}
+.topic span {
+    color: chocolate;
+}
+
+/* Footer 
+================================================= */
+footer{
+    background: #333;
+    font-size: 1rem;
+    border-top: 2px solid rgb(17, 166, 211);
+}
+footer .bg-gray {
+    background: #5f5f5f;
+}
+footer .bg-gray p{
+    color: #fff;
+}
+footer p {
+    color: #ccc;
+}
+footer h3 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    border-bottom: 2px solid rgb(20, 172, 233);
+    width: 100px;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 4px;
+    border-bottom: solid #ccc 1px;
+}
+footer li a {
+    color: #ccc;
+}
+footer li a:hover {
+    color: chocolate;
+}
+
+
+ .fa-facebook-f, .fa-twitter, .fa-google{
+    height: 50px;
+    width: 50px;
+    background: #ccc;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-google:hover, a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-google:hover{
+    background: chocolate;
+}
+
+.contact .card {
+    color: #fff;
+    background: #fcfcfc;
+}
+.contact h1 {
+    font-size: 1.9rem;
+}
+
+.notice-card {
+    box-shadow: 1px 2px 3px 1px #ccc;
+    position: relative;
+    background: #fff;
+    top: -2rem;
+}
+.notice{
+    border-right: solid 1px #ccc;
+}
+.contact input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    border: solid 1px #ccc;
+}
+.contact textarea {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+.contact input[type="submit"] {
+    padding: 8px 2rem;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn-danger {
+    transition: all 500ms ease-in-out;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.btn-danger:hover {
+    background: var(--secondary);
+    color: #fff;
+    border: none;
+}
+
+
+
+@media all and (max-width: 768px) {
+
+    .landing img{
+        height: 100%;
+    }
+
+    .carousel-caption {
+        margin: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .bible-qoute {
+        border-right: solid 1px #fff;
+        border-left: solid 1px #fff;
+        border-bottom: solid 1px #fff;
+    }
+
+    #d-none {
+        display: none;
+    }
+
+    .quote {
+        position: relative;
+        height: 40vh;
+        background-color: #f3f3f3;
+        margin-top: 4rem;
+        font-size: 1rem;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    .quote p:last-child{
+        color: darkkhaki;
+        font-weight: bold;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-top: 1.5rem;
+    }
+
+    .sermon .bg-ligh {
+        background: #f5f4f4;
+        height: 100vh;
+        padding: 4rem 0;
+
+    }
+
+    .jumbotron {
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .navbar-brand h4 {
+        font-size: 1rem;
+        display: none;
+    }
+
+    header {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    .newsletter h3{
+        font-size: 1.5rem;
+    }
+
+    .newsletter input[type="text"] {
+        width: 100%;
+        padding: 7px;
+    
+    }
+    .newsletter input::placeholder {
+        font-size: 1.3rem;
+    }
+    
+    .newsletter input[type="submit"] {
+        width: 100%;
+        padding: 6px;
+        font-size: 1.3rem;
+        color: #fff;
+        border: none;
+    }
+}
+
+
