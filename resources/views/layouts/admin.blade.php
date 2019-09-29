@@ -6,7 +6,8 @@
         
 				<meta name="viewport" content="width=device-width, intial-scale=1">
 				<!-- CSRF Token -->
-				<meta name="csrf-token" content="{{ csrf_token() }}">
+                <meta name="csrf-token" content="{{ csrf_token() }}">
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title>Admin Area | Dashboard</title>
 				<!-- core css -->
         <link href="{{secure_asset('css/bootstrap2.min.css')}}" rel="stylesheet">
