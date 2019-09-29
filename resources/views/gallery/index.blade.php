@@ -14,7 +14,7 @@
                                 </a>
                                 <a href="{{route('prayer.create')}}" class="list-group-item ">
                                     <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 
-                                    PrayerPoints <span class="badge">{{App\PrayerPoint::count()}}</span>
+                                    Prayer Points <span class="badge">{{App\PrayerPoint::count()}}</span>
                                 </a>
                                 <a href="{{route('Events.index')}}" class="list-group-item"><span class=" glyphicon glyphicon-user" aria-hidden="true"></span> 
                                     Events <span class="badge">33</span>

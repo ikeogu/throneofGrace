@@ -15,7 +15,7 @@
         <body>
             <nav class="navbar navbar-light py-4 bg-dark">
                 <div class="navbar-brand ">
-                    <h3>Admin Dashboard Login</h3>
+                    <h3>Admin  Login</h3>
                 </div>
             </nav>
             <section>
