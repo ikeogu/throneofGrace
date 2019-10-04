@@ -10,8 +10,8 @@
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title>Admin Area | Dashboard</title>
 				<!-- core css -->
-        <link href="{{asset('css/bootstrap2.min.css')}}" rel="stylesheet">
-				<link href="{{asset('css/style2.css')}}" rel="stylesheet">
+        <link href="{{secure_asset('css/bootstrap2.min.css')}}" rel="stylesheet">
+				<link href="{{secure_asset('css/style2.css')}}" rel="stylesheet">
 			
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/core.js"></script>
         
@@ -57,7 +57,7 @@
                 ======================================== -->
         <!-- placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/style.js')}}"></script>	
+        <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{secure_asset('js/style.js')}}"></script>	
     	</body>
     </html>

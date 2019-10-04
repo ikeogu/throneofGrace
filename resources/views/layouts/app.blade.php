@@ -17,14 +17,14 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/fonts-icon.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ secure_asset('css/fonts-icon.css') }}">
   
 
     <!-- Styles -->
     
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
       window.sr = ScrollReveal({
@@ -44,7 +44,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
               <div class="container-fluid">
                 <div class="row navbar-brand text-center">
-                    <img src="{{asset('img/church/logo.jpeg')}}" height="50" width="50">
+                    <img src="{{secure_asset('img/church/logo.jpeg')}}" height="50" width="50">
                     <h4 class="tag">Throne of Power & Fire Ministries Int'l (INC)</h4>
                 </div>
               
@@ -149,9 +149,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script>
-    <script src="{{asset('js/bootstrap.js')}}"></script>
-    <script src="{{ asset('js/style.js') }}" ></script>
-    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="{{secure_asset('js/bootstrap.js')}}"></script>
+    <script src="{{ secure_asset('js/style.js') }}" ></script>
+    <script src="{{ secure_asset('js/app.js') }}" ></script>
 
     <script>
       sr.reveal('.bible_study', {
