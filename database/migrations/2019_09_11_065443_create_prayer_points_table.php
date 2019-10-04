@@ -15,12 +15,12 @@ class CreatePrayerPointsTable extends Migration
     {
         Schema::create('prayer_points', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('book_id');
+            
             $table->string('topic');
             $table->longText('body');
             $table->string('price');
             $table->string('content');
-            $table->string('description');
+            $table->longText('description');
             $table->timestamps();
         });
     }

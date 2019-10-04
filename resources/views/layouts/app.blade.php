@@ -81,7 +81,8 @@
                     <li class="nav-item">
                       <a class="nav-link" href="{{route('contact.create')}}">Contact</a>
                     </li>
-                    <li class="nav-item"><a href="{{route('pray')}}" class="nav-link">Prayer Points</a></li>
+                    <li class="nav-item">
+                      <a  class="nav-link" href="{{route('pray')}}" class="nav-link">Prayer Points</a></li>
                     <li class="">
                       <a class="btn btn-info" href="{{route('donate')}}">Donate</a>
                     </li>

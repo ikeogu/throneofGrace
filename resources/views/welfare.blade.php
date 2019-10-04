@@ -21,7 +21,7 @@
                                 This is an intensive care-giving unit of the ministry with widows, orphans and vulnerable children (OVCs) as target beneficiaries. We preach the gospel to the poor and oppressed and also take care of their needs as a caring church. ( Matthew 25:34-40). To reach the world we preach the gospel and practice it through love and care.<strong><em> Partner with us on a monthly basis.</em></strong> <strong> WHOSOEVER THAT GIVES TO THE POOR LENDS TO GOD.</strong>
                                 </h5>
                         <strong>PARTNERS / DONATION ACCOUNT</strong>
-                        <h4 class="p-2 text-dark"><strong>
+                        <h5 class="p-2 text-dark"><strong>
                             <ul>
                                 <li>Account Number (Current): 2016285457 </li>
                                 <li>Account Name: Throne of Power and Fife Ministry Int’l
@@ -31,7 +31,7 @@
                                 <li><a>Email: widowsandorphans7@gmail.com</a></li>
                                  
                             </ul></strong>
-                        </h4>
+                        </h5>
 
                     </div>
                     <div class="col-6">
