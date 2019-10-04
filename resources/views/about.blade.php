@@ -25,17 +25,17 @@
                             <h6 class="text-dark">Throne of Power and Fire Ministry is a Bible and Holy Ghost Based Ministry and she strongly believe and will continue to stand on the Word of God as a Bible believing Church</h6>
                             <h4>ABOUT THE PASTOR</h4>
                             <h6 class="text-dark">Emmanuel O. Ijiogbe is President and Senior Pastor of Throne of Power and Fire Ministries. He is a Revivalist, a lover and a teacher of the word of God, a defender of others, an intercessor, and also a student in the school of prayer. In year 2000 he became a part of the founding leadership of Territorial Intercessors Group, Mountain of Fire and Miracles Ministries, Rumuola South - South Region 1 Port Harcourt, Rivers State until 2007 when he was called out by God. </h6>
-                                <h6 class="text-dark">
+                                <p class="text-dark">
                                     Emma is very athletic and was a prolific footballer, he abandoned sports due to the call of God upon his life.
-                                    Emmanuel was born to Mr. & Mrs. Clement Ijiogbe of Igbinosa family at Oyomon-Igueben in Igueben Local Govt Area of Edo State. </h6>
-                                   <h6 class="text-dark"> He graduated from Edo State University now Ambrose Ali University, Edo State. He also acquired several professional education certificates in Environmental Health Security and Safety.</h6>
+                                    Emmanuel was born to Mr. & Mrs. Clement Ijiogbe of Igbinosa family at Oyomon-Igueben in Igueben Local Govt Area of Edo State. </p>
+                                   <p class="text-dark"> He graduated from Edo State University now Ambrose Ali University, Edo State. He also acquired several professional education certificates in Environmental Health Security and Safety.</p>
                                   <p class="text-dark">  He worked briefly with Kresta – Laurel Nigeria Ltd in SPDC Port Harcourt and later worked with Sea Petroleum and Gas Group of companies (SPG) at (FOT Onne, Rivers State and finally resigned to fully answer the call of God and go into full time Ministry. Since then he is still in active Ministry and he and his Ministry have tremendously impacted many lives and places both within and outside Nigeria to the glory of God.
                                     </p>
-                                    <h4>Emma has authored many books and among his very popular publication are the<small class="text-dark"> <strong> FOR DELIVERANCE,    PRAYER DICTIONARY and the ARISE AND PRAY</strong></small>.<br>
+                                    <p>Emma has authored many books and among his very popular publication are the<small class="text-dark"> <strong> FOR DELIVERANCE,    PRAYER DICTIONARY and the ARISE AND PRAY</strong></small>.<br>
                                             He resides with his family in Port- Harcourt Nigeria and the Almighty God has blessed his marriage to Engr Pastor Mrs. Oluwakemi with great children.
                                             He so much believe that ‘with God all things are possible’
                                             
-                                            </h4>
+                                    </p>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="col-sm col-md-10" >
                         <strong><h3 >Our Statement of faith</h3></strong>
                          <h5 class="text-dark">Throne of Power and Fire Ministry is a Bible and Holy Ghost Based Ministry and she strongly believe and will continue to stand on the following:</h5></strong>
-                        <h4 class="text-dark"> <strong>
+                        <p class="text-dark"> 
                         <ul>
                              <li>   The Holy Bible is the inspired word of God 2 Timothy 3:15-17, 2 Peter 1:21</li>
                               <li>  There is one God, who eternally exist in three person:</li>
@@ -107,7 +107,7 @@
                                <li> We believe that tithing is commanded to all believers. Mala 3 v 7 – 10</li>
                                 
                             </ul>
-                        </h4> 
+                        </p> 
                     </div>
                 </div>
             </div>

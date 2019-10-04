@@ -19,7 +19,8 @@ class PaymentController extends Controller
      * Redirect the User to Paystack Payment Page
      * @return Url
      */
-    public function redirectToGateway()
+    public function redirectToGateway(Request $request)
+    
     {
         return Paystack::getAuthorizationUrl()->redirectNow();
     }

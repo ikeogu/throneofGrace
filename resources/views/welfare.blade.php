@@ -11,7 +11,7 @@
         <section class="p-5">
             <div class="container-fluid">
                 <div class="justify-content-center">
-                    <h2>SOCIAL WELFARE PROGRAM</h2>
+                    <h3>SOCIAL WELFARE PROGRAM</h3>
                 </div>
                 <div class="row my-3 py-5 justify-content-between">
                     

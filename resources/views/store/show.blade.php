@@ -91,8 +91,7 @@
                         <input type="hidden" name="amount" value="{{$book->price * 100}}"> {{-- required in kobo --}}
                        
                     <input type="hidden" name="metadata" value="{{ json_encode($array = ['title' => $book->title,'book_id'=> $book->id,]) }}" required class="form-group form-control"> {{-- For other necessary things you want to add to your payload. it is optional though --}}
-                        <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
-                        <input type="hidden" name="key" value="{{ config('paystack.secretKey') }}"> {{-- required --}}
+                        
                         {{ csrf_field() }} {{-- works only when using laravel 5.1, 5.2 --}}
             
                             <input type="hidden" name="_token" value="{{ csrf_token() }}"> {{-- employ this in place of csrf_field only in laravel 5.0 --}}

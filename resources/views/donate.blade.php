@@ -54,15 +54,14 @@
                                         <option value="first_fruit"> First Fruit</option>
                                         <option value="offering">Offering</option>
                                         <option value="tithe">Tithe</option>
-                                        <option value="kindom_project">Kingdom Project</option>
+                                        <option value="kindom_project">Church Project</option>
                                         <option value="seed">Seed </option>
                                         <option value="freewill">Freewill Donation</option>
                                     </optgroup>
                                 </select>
                             </div>
                         
-                            <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}" data-ref=""> {{-- required --}}
-                            <input type="hidden" name="key" value="{{ config('paystack.secretKey') }}" data-key=""> {{-- required --}}
+                            
                             {{ csrf_field() }} {{-- works only when using laravel 5.1, 5.2 --}}
                 
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" data-token=""> {{-- employ this in place of csrf_field only in laravel 5.0 --}}

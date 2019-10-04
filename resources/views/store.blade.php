@@ -4,7 +4,7 @@
             <div class="container-fluid p-0">
                 <div class="jumbotron bg-store">
                     <h1  style="color:azure;"> Our E-Store</h1>
-                    <p class="h4 text-center" style="color:azure;">Spiritural prayer guides</p>
+                    <p class="h4 text-center" style="color:azure;">Spiritual Prayer guides</p>
                 </div>
             </div>
         </section>

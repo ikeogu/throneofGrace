@@ -11,7 +11,7 @@
 
     <section class="gallery-img my-5">
         <div class="container">
-                <h3 class="text-success"><strong > Thanks for Purchasing ... </strong> <br >Click on Download to have Grab Copy</h3>
+                <h3 class="text-success"> Thanks for Purchasing ... <br >Click on Download to have Grab Copy</h3>
 
             <div class="card">
                 <div class="card-body">
@@ -38,9 +38,9 @@
                     
                     <div class="">
                         <div class="text-center card-title">
-                        <strong ><h3> {{$ppt->topic}} </h3></strong>
+                        <strong ><h4> {{$ppt->topic}} </h4></strong>
                            
-                            <h6 class="text-dark"> {{$ppt->description}}</h6>
+                            <p class="text-dark"> {{$ppt->description}}</p>
                            
                             
                         </div>

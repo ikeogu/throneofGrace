@@ -11,7 +11,7 @@
 
     <section class="gallery-img my-5">
         <div class="container">
-                <h3 class="text-success"><strong > Thanks for Purchasing .....</strong> <br >Click on Download to have your Copy</h3>
+                <h3 class="text-success">Thanks for Purchasing .... <br >Click on Download to have your Copy</h3>
 
             <div class="card">
                 <div class="row card-body">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="col-12">
                         <div class="text-center card-title">
-                        <h6 >Title : {{$book->title}}</h6>
+                            <h6 >Title : {{$book->title}}</h6>
                            
                             <h6 >Author : {{$book->author}}</h6>
                             <h6 >Pages : {{$book->pages}}</h6>
