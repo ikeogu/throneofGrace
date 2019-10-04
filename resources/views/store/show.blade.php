@@ -60,13 +60,21 @@
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-                <img src="{{asset('img/church/logo.jpeg')}}" height="50" width="60">
-              <h5 class="modal-title" id="exampleModalLongTitle"> One Time Payment </h5>
-              <img src="{{asset('img/church/logo.jpeg')}}" height="50" width="60">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                </button>
+            <div class="modal-header justify-content-between row">
+                <div class="col-3">
+                    <img src="{{asset('img/church/logo.jpeg')}}" height="65" width="60"  id="img1">
+                </div>
+                <div class="col-6">
+                    <h5 class="modal-title" id="exampleModalLongTitle" class="my"> One Time Payment </h5>
+                </div>
+                <div class="col-3">
+                        
+                        <img src="{{asset('img/church/pay.png')}}" height="80" width="80" id="img2">
+                </div>
+                
             </div>
             <div class="modal-body">
                 <form method="POST" action="{{ route('pay') }}" accept-charset="UTF-8" class="form-horizontal" role="form">

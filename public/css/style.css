@@ -281,7 +281,17 @@ nav .nav-link:hover {
 /* Donate
 ========================================= */
 .donate {
-    background: url('/img/donate.jpg') center/cover fixed no-repeat;
+    background: url('/img/church/religion.jpg') center/cover fixed no-repeat;
+    
+}
+.pray {
+    background: url('/img/church/prayer.jpg') center/cover fixed no-repeat;
+}
+.pray-overlay {
+    background: rgba(180, 177, 177, 0.9);
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
 }
  .donate-overlay {
     background: rgba(0, 0,0,0.9);
@@ -370,9 +380,34 @@ nav .nav-link:hover {
     height: 50vh;
     border-radius: 0;
 }
+.bg-welfare {
+    background: url('/img/church/walfare.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
 
 .bg-store {
     background: url('/img/church/book.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+.bg-done {
+    background: url('/img/church/donate.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+.bg-band {
+    background: url('/img/church/prayer.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+.bg-ppt {
+    background: url('/img/church/praying.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
+.bg-ppt2{
+    background: url('/img/church/religion.jpg') center/cover fixed no-repeat;
     height: 50vh;
     border-radius: 0;
 }
@@ -685,4 +720,16 @@ footer li a:hover {
     }
 }
 
+/* #img1{
+    padding: 5px;
 
+}
+#img2{
+    margin-left: 50px;
+    padding: 5px;
+    
+}
+.my{
+    margin-left: 20px;
+    padding: 5px;
+} */

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class PrayerPoint extends Model
 {
-    protected $fillable = ['topic', 'body'];
+    protected $fillable = ['topic', 'body','content','price','description'];
 
     public function prayer(){
        

@@ -4,14 +4,14 @@
         <div class="container-fluid p-0">
             <div class="jumbotron bg-store">
                 <h1  style="color:azure;"> Our E-Store</h1>
-                <p class="h4 text-center" style="color:azure;">Spiritural prayer guides</p>
+                <p class="h4 text-center" style="color:azure;">Spiritual prayer guides</p>
             </div>
         </div>
     </section>
 
     <section class="gallery-img my-5">
         <div class="container">
-                <h3 class="text-success"><strong > Thanks for Purchasing .....</strong> <br >Click onDowload to have your Copy</h3>
+                <h3 class="text-success"><strong > Thanks for Purchasing .....</strong> <br >Click on Download to have your Copy</h3>
 
             <div class="card">
                 <div class="row card-body">

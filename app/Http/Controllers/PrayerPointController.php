@@ -48,22 +48,30 @@ class PrayerPointController extends Controller
             
             'body' => 'required',
             'topic' => 'required',
+            'content'=> 'required',
             
         ])->validate();
-
+        if ($request->hasFile('content')) {
+            
+            $bookContent = '_PrayerContent'.time().'.'.request()->content->getClientOriginalExtension();
+            $request->content->storeAs('public/prayerPoint',$bookContent);
+            
         
             $sermon = new PrayerPoint();
             $sermon->topic = $request->topic;
             $sermon->body = $request->body;
-            $sermon->book_id = $request->book_id;
-            $book =Book::find($sermon->book_id);
-
-           if( $book->book()->save($sermon)){
-                return redirect(route('prayer.create'))->with('success',"Uploaded");
+            $sermon->description = $request->description;
+            $sermon->price = $request->price;
+            $sermon->content = $bookContent;
+            // $sermon->book_id = $request->book_id;
+            // $book =Book::find($sermon->book_id);
+            // $book->book()->save($sermon)
+           if( $sermon->save()){
+                return redirect(route('prayer.create'))->with('success',"Prayer Topic PUblished");
 
            } 
 
-           
+        }  
 
     }
 
@@ -73,9 +81,11 @@ class PrayerPointController extends Controller
      * @param  \App\PrayerPoint  $prayerPoint
      * @return \Illuminate\Http\Response
      */
-    public function show(PrayerPoint $prayerPoint)
+    public function show($prayerPoint)
     {
         //
+        $ppt = PrayerPoint::find($prayerPoint);
+        return view('prayer/show',['ppt'=>$ppt]);
     }
 
     /**
@@ -115,4 +125,11 @@ class PrayerPointController extends Controller
         $image->delete();
         return redirect(route('prayer.index'))->with('success', ' Deleted');
     }
+
+    public function download($id){       
+        $book_exist = PrayerPoint::find($id);
+        $file_path = public_path( 'storage/prayerPoint/'.$book_exist->content);
+        
+        return response()->download($file_path);
+    } 
 }

@@ -18,6 +18,9 @@ class CreatePrayerPointsTable extends Migration
             $table->integer('book_id');
             $table->string('topic');
             $table->longText('body');
+            $table->string('price');
+            $table->string('content');
+            $table->string('description');
             $table->timestamps();
         });
     }

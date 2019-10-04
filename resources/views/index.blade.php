@@ -12,7 +12,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/church/love.png" class="d-block w-100" alt="..." />
+            <img src="/img/church/religion.jpg" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-md-block ">
               <h1 style="color:black;">Peace I Give you not As of the World</h1>
               <p><a href="#" class="btn btn-info btn-lg text-uppercase">Worship with us</a></p>
@@ -85,10 +85,8 @@
           <div class="col-sm col-md-6 px-5">
             <div class="container mt-5">
               <h3 class="text-capitalize my-4">About Our Church</h3>
-              <h5 class="my-3">We are helping people with the Cretor!</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sapiente sequi accusamus sit distinctio
-                temporibus beatae consequatur rem voluptate quia incidunt ab, quibusdam, ea similique nihil et facilis
-                rerum voluptatum. </p>
+              <h5 class="my-3">We are the Bible others read.</h5>
+              <p>Throne of Power and Fire Ministry is a Bible and Holy Ghost Based Ministry and she strongly believe and will<br> continue to stand on the Word of God as a Bible believing Church </p>
               <a href="/about" class="text-uppercase see-more"> Read more <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
@@ -110,6 +108,7 @@
         </div>
       </div>
     </section>
+    
 
     <section class="sermons">
       <div class="heading">
@@ -300,25 +299,12 @@
     <!-- Donate  -->
     <section class="donate">
       <div class="container-fluid donate-overlay">
-        <div class="row justify-content-center">
-          <div class="col-sm col-md-4">
-            <div class="card" id="card3">
-                
-            </div>
+        <div class="row justify-content-center text-white">
+            <h3 class="text-capitalize my-4">PROPHETIC INTERCESSARY PRAYER BAND</h3>
+            <h5 class="my-3 ">This group is a Holy Spirit, selected and trained brethren who are mainly reserved with responsibility of praying and interceding for the Nations, government, Churches, Ministers, the sick and the peace of our Land.</h5>
+            
+            <a href="{{route('intp')}}" class="text-uppercase see-more"> Read more <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="col-sm col-md-4">
-            <div class="card" id="card2">
-              <h4>Make Donations</h4>
-              <p class="text-white">A man's gift maketh  way for him</p>
-              <a href="/donate" class="btn btn-light btn-fill">Donate</a>
-            </div>
-          </div>
-          <div class="col-sm col-md-4">
-            <div class="card" id="card3">
-              
-            </div>
-          </div>
-          <!-- <div class="col-sm col-md-6"></div> -->
         </div>
       </div>
     </section>

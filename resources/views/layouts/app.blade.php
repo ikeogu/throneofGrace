@@ -17,14 +17,14 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ secure_asset('css/fonts-icon.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/fonts-icon.css') }}">
   
 
     <!-- Styles -->
     
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
       window.sr = ScrollReveal({
@@ -44,7 +44,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
               <div class="container-fluid">
                 <div class="row navbar-brand text-center">
-                    <img src="{{secure_asset('img/church/logo.jpeg')}}" height="50" width="50">
+                    <img src="{{asset('img/church/logo.jpeg')}}" height="50" width="50">
                     <h4 class="tag">Throne of Power & Fire Ministries Int'l (INC)</h4>
                 </div>
               
@@ -67,10 +67,10 @@
                       
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="{{route('event')}}">Events</a>
+                    <a class="nav-link" href="{{route('intp')}}">Intercessory Prayers</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{{route('sermon')}}">Sermons</a>
+                      <a class="nav-link" href="{{route('welfare')}}">welfare Program</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{{route('gal')}}">Gallery</a>
@@ -101,14 +101,14 @@
           <div class="row py-4">
             <div class="col-sm col-md-3">
               <h3>About the church</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, dicta ea? Commodi mollitia corrupti
-                nesciunt quidem sunt</p>
+              
+              <p>Throne of Power and Fire Ministry is a Bible and Holy Ghost Based Ministry and she strongly believe and will<br> continue to stand on the Word of God as a Bible believing Church </p>
               <a href="/about" class="btn-donate1">Read more...</a>
             </div>
             <div class="col-sm col-md-3">
               <h3>Quick links</h3>
               <ul>
-                <li><a href="{{route('event')}}">Upcoming events</a></li>
+                <li><a href="{{route('event')}}">Upcoming Events</a></li>
                 <li><a href="{{route('sermon')}}">Recents Sermons</a></li>
                 <li><a href="{{route('pray')}}">Prayer Points</a></li>
                 <li><a href="{{route('view')}}">E-store</a></li>
@@ -139,7 +139,7 @@
             </div>
           </div>
           <div class="row bg-gray justify-content-center pt-3 p-5">
-            <p>Throne of Power and Fire Ministries int'l Inc<a href="/login" > Reserved </a>  &copy; {{ date('Y') }}</p>
+            <p>Throne of Power and Fire Ministries int'l Inc<a href="/login" style="color:aliceblue"> Reserved </a>  &copy; {{ date('Y') }}</p>
           </div>
         </div>
       </footer>
@@ -149,9 +149,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"></script>
-    <script src="{{secure_asset('js/bootstrap.js')}}"></script>
-    <script src="{{ secure_asset('js/style.js') }}" ></script>
-    <script src="{{ secure_asset('js/app.js') }}" ></script>
+    <script src="{{asset('js/bootstrap.js')}}"></script>
+    <script src="{{ asset('js/style.js') }}" ></script>
+    <script src="{{ asset('js/app.js') }}" ></script>
 
     <script>
       sr.reveal('.bible_study', {

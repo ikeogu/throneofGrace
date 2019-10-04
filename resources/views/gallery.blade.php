@@ -3,7 +3,7 @@
         <section class="sermons gallery-landing">
             <div class="container-fluid p-0">
                 <div class="jumbotron bg-gallery">
-                    <h1 class="text-white"> Our Gallery</h1>
+                    <h1 class="text-dark"> Our Gallery</h1>
                 </div>
             </div>
         </section>

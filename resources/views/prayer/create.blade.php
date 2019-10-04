@@ -120,18 +120,11 @@
 													<label>Prayer Topic</label>
 													<input type="text" class="form-control" placeholder="Enter caption" name="topic">
 											</div>
+											
 											<div class="form-group">
-												<label>Choose Book</label>
-												<select class="form-control m-bot15" name="book_id">
-
-													@if ($book->count() > 0 )
-												
-														@foreach($book as $role)
-															<option value="{{ $role->id }}">{{ $role->title }}</option>    
-														@endforeach
-													@endif
-												
-												</select>
+												<label>Add Description</label>
+												<textarea name="description" class="form-control"
+															 row="8"></textarea>
 											</div>
 											<div class="form-group">
 												<label>Passage</label>
@@ -139,7 +132,14 @@
 															placeholder="Passage" row="8"></textarea>
 											</div>
 										<hr>
-											
+										<div class="form-group">
+											<label>Upload Prayer Points</label>
+											<input type="file" name="content">
+										</div>
+										<div class="form-group">
+											<label>Enter Price </label>
+											<input type="text" name="price" placeholder="# 300" required>
+										</div>	
 									</div>
 									<div class="modal-footer">
 											<button type="submit" class="btn btn-primary">Published</button>

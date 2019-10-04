@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Paystack;
 use App\Sold;
 use App\Book;
+use App\PrayerPoint;
 use Illuminate\Http\File;
 use PDF;
 
@@ -22,6 +23,10 @@ class PaymentController extends Controller
     {
         return Paystack::getAuthorizationUrl()->redirectNow();
     }
+    // public function redirectToGateway2()
+    // {
+    //     return Paystack::getAuthorizationUrl()->redirectNow();
+    // }
 
     /**
      * Obtain Paystack payment information
@@ -44,15 +49,17 @@ class PaymentController extends Controller
         $paid->card_type = data_get($paymentDetails, 'data.authorization.card_type');
         $paid->title = data_get($paymentDetails, 'data.metadata.title');
         $book_id = data_get($paymentDetails, 'data.metadata.book_id');
-        
+        //
+        $ppt_id = data_get($paymentDetails, 'data.metadata.ppt_id');
         $paid->status =data_get($paymentDetails, 'status');
         $paid->paid_at =data_get($paymentDetails, 'data.paidAt');
-        if($paid->save()){
+        if($paid->save() && $book_id != null){
               $book = Book::find($book_id);
             return view('thanks',['book'=>$book])->with('success',"Transaction was successful.");
           
-        }else{
-            return back()->with('danger', 'Not successful');
+        }elseif($ppt_id!= null && $paid->save()){
+            $ppt = PrayerPoint::find($ppt_id);
+            return view('ppts',['ppt'=>$ppt])->with('success',"Transaction was successful.");
         }
         
     }

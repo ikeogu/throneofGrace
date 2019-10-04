@@ -23,9 +23,13 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/gallery', function () {
-    return view('gallery');
-})->name('gallery');
+Route::get('/welfare', function () {
+    return view('welfare');
+})->name('welfare');
+
+Route::get('/intp', function () {
+    return view('intp');
+})->name('intp');
 
 Route::get('/event', 'EventController@index2')->name('event');
 Route::get('/sermon', 'SermonController@index2')->name('sermon');
@@ -58,12 +62,14 @@ Route::get('/prayers','PrayerPointController@index2')->name('pray');
 //paystack loader route
 
 Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay'); 
+//Route::post('/payppt', 'PaymentController@redirectToGateway2')->name('payppt');
 
 Route::post('/pays', 'PaymentController@pay')->name('pays');
-Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');
+Route::get('/payment/callback', 'PaymentController@handleGatewayCallback')->name('call');
 //magic function
 Route::get('/E-books','BookController@vex')->name('view');
 Route::resource('contact','ContactController');
 
 
 Route::get('/download/{id}','BookController@download')->name('download');
+Route::get('/downloads__/{id}','PrayerPointController@download')->name('downloadppt');
