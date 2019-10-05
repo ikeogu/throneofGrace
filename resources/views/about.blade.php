@@ -69,7 +69,7 @@
                                    <li> We focus on raising life changers for Christ.</li>
                                    <li> We are determined to bring restoration to the people.</li>
                                    <li>We carries the virtue to empower and equip the weak.</li>
-                                   <li>We are driving with a vision to establish outreaches <br>where men and women shall be raised to take the Gospel to Nation of the world. </li>
+                                   <li>We are driven by a vision to establish outreaches <br>where men and women shall be raised to take the Gospel to Nation of the world. </li>
                                 </ul>    
                         </div>
                     </div>

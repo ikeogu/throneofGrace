@@ -135,7 +135,7 @@
 											<div class="form-group">
 													<label>Passage</label>
 													<textarea name="passage" class="form-control"
-															placeholder="Passage"></textarea>
+															placeholder="Passage"  row="15"></textarea>
 											</div>
 										<hr>
 											<div class="form-group">

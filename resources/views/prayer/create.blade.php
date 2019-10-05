@@ -130,12 +130,12 @@
 											<div class="form-group">
 												<label>Add Description</label>
 												<textarea name="description" class="form-control"
-															 row="8"></textarea>
+												row="15"></textarea>
 											</div>
 											<div class="form-group">
 												<label>Passage</label>
 												<textarea name="body" class="form-control"
-															placeholder="Passage" row="8"></textarea>
+															placeholder="Passage" row="15"></textarea>
 											</div>
 										<hr>
 										<div class="form-group">

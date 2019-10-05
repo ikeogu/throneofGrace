@@ -81,7 +81,7 @@
                                             <div class="form-group">
                                                 <label>Details</label>
                                                 <textarea name="details" class="form-control"
-                                            placeholder="Page Body" value="{{$ev->details}}"></textarea>
+                                            placeholder="Page Body" value="{{$ev->details}}"  row="15"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <hr>
@@ -115,4 +115,4 @@
                 </div>
             </div>
         </section>
-@label
+@endsection

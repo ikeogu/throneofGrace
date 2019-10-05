@@ -122,7 +122,7 @@
                 Opposite MCC 2nd Gate, [Main Gate] Rumuigbo, Ikwere Road, Obio/Akpor. Rivers State</p>
   
               <p>Phone: +2348093114646, +2348038404894<br>
-                Email: pstemmaijiogbe@gmail.com</p>
+                Email: pstemmaijiogbe1@gmail.com</p>
             </div>
             <div class="col-sm col-md-3">
               <h3>Connect</h3>

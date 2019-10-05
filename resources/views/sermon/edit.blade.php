@@ -115,7 +115,7 @@
 													<div class="form-group">
 															<label>Page Body</label>
 															<textarea name="passage" class="form-control"
-																	 value="{{$ser->passage}}"></textarea>
+																	 value="{{$ser->passage}}"  row="15"></textarea>
 													</div>
 													<hr>
 													<div class="form-group">

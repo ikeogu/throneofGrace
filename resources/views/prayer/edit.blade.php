@@ -121,7 +121,7 @@
                                                 <div class="form-group">
                                                         <label>Page Body</label>
                                                         <textarea name="body" class="form-control"
-                                                                    >{{$ppt->body}}</textarea>
+														row="15">{{$ppt->body}}</textarea>
                                                 </div>
                                                 <hr>
 													

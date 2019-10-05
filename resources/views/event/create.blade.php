@@ -90,7 +90,7 @@
 
 							</div>
 					</div>
-			<div class="row">
+						<div class="row">
               @if ($message = Session::get('success'))
 
                   <div class="alert alert-success alert-block">
@@ -135,7 +135,7 @@
 															</div>
 															<div class="form-group">
 																	<label>Details</label>
-																	<textarea  class="form-control"	placeholder="Page Body" name="details"></textarea>
+																	<textarea  class="form-control"	placeholder="Page Body" name="details"  row="15"></textarea>
 															</div>
 															<div class="form-group">
 																	<hr>
@@ -158,7 +158,7 @@
 															</div>
 													</div>
 													<div class="modal-footer">
-															<button type="submit" class="btn btn-primary">Published</button>
+															<button type="submit" class="btn btn-primary">Post</button>
 													</div>
 									</form>
 							</div>
