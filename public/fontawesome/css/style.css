@@ -1,0 +1,22 @@
+#social-links{
+
+}
+#social-links > ul {
+    /* background-color: #cccccc; */
+    list-style: none;
+
+}
+li a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+#social-links ul > li{
+    
+   
+     padding: 6px;
+     width: 4%;
+     text-align: center;
+     display: inline-block;
+     
+ } 

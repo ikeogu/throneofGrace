@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <section class="gallery-landing">
         <div class="container-fluid p-0">
@@ -114,4 +115,5 @@
           </div>
         </div>
       </div> 
+     
 @endsection

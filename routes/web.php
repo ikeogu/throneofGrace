@@ -75,3 +75,5 @@ Route::resource('contact','ContactController');
 
 Route::get('/download/{id}','BookController@download')->name('download');
 Route::get('/downloads__/{id}','PrayerPointController@download')->name('downloadppt');
+
+Route::get('/testi/{key}','TestimonyController@show')->name('test')->middleware('signed');

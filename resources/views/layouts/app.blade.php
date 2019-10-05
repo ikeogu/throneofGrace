@@ -17,15 +17,18 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ secure_asset('css/fonts-icon.css') }}">
+   
+    
   
 
     <!-- Styles -->
-    
+    <link rel="stylesheet" href="{{ secure_asset('css/fonts-icon.css') }}">
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
+
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
       window.sr = ScrollReveal({
@@ -153,6 +156,8 @@
     <script src="{{secure_asset('js/bootstrap.js')}}"></script>
     <script src="{{ secure_asset('js/style.js') }}" ></script>
     <script src="{{ secure_asset('js/app.js') }}" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="{{ secure_asset('js/share.js') }}"></script>
     {{-- <script src="{{ mix('/js/app.js') }}"></script> --}}
 
     <script>

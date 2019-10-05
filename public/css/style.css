@@ -723,6 +723,13 @@ footer li a:hover {
         color: #fff;
         border: none;
     }
+
+    #social-links ul > li{
+        padding: 10px;
+        width: 18%;
+        
+        display: inline-block;
+    } 
 }
 
 /* #img1{
@@ -738,3 +745,22 @@ footer li a:hover {
     margin-left: 20px;
     padding: 5px;
 } */
+#social-links > ul {
+    /* background-color: #cccccc; */
+    list-style: none;
+
+}
+li a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+#social-links ul > li{
+    
+   
+     padding: 10px;
+     width: 25%;
+     
+     display: inline-block;
+     
+ } 
