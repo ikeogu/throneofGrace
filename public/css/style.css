@@ -371,6 +371,11 @@ nav .nav-link:hover {
     height: 50vh;
     border-radius: 0;
 }
+.bg-name {
+    background: url('/img/church/feedback.jpg') center/cover fixed no-repeat;
+    height: 50vh;
+    border-radius: 0;
+}
 .bg-about h1, p {
     text-align: left;
 }

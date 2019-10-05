@@ -85,8 +85,8 @@
                     <div class="col-sm col-md-10" >
                         <strong><h3 >Our Statement of faith</h3></strong>
                          <h5 class="text-dark">Throne of Power and Fire Ministry is a Bible and Holy Ghost Based Ministry and she strongly believe and will continue to stand on the following:</h5></strong>
-                        <p class="text-dark"> 
-                        <ul>
+                        
+                        <ul class="text-dark">
                              <li>   The Holy Bible is the inspired word of God 2 Timothy 3:15-17, 2 Peter 1:21</li>
                               <li>  There is one God, who eternally exist in three person:</li>
                               <li> The Father</li>
@@ -107,7 +107,7 @@
                                <li> We believe that tithing is commanded to all believers. Mala 3 v 7 – 10</li>
                                 
                             </ul>
-                        </p> 
+                         
                     </div>
                 </div>
             </div>

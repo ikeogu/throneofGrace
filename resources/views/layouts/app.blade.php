@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <!-- CSRF Token -->
@@ -37,6 +38,7 @@
         viewFactor: 0.1,
       });
     </script>
+    
 </head>
 <body>
     <div id="app">
@@ -59,12 +61,7 @@
                   <ul class="navbar-nav ml-auto text-center">
                     <li class="nav-item active">
                       <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link " href="/about" >
-                        About
-                      </a>
-                      
+                    </li>                      
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="{{route('intp')}}">Intercessory Prayers</a>
@@ -72,17 +69,20 @@
                     <li class="nav-item">
                       <a class="nav-link" href="{{route('welfare')}}">welfare Program</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{route('gal')}}">Gallery</a>
+                     <li class="nav-item">
+                      <a  class="nav-link" href="{{route('pray')}}" class="nav-link">Prayer Points</a>
                     </li>
+                    
                     <li class="nav-item">
                       <a class="nav-link" href="{{route('view')}}">E-Store</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{{route('contact.create')}}">Contact</a>
-                    </li>
+                        <a class="nav-link" href="{{route('testimony.create')}}">Testimony</a>
+                      </li>
+                    
                     <li class="nav-item">
-                      <a  class="nav-link" href="{{route('pray')}}" class="nav-link">Prayer Points</a></li>
+                        <a class="nav-link" href="{{route('gal')}}">Gallery</a>
+                      </li>
                     <li class="">
                       <a class="btn btn-info" href="{{route('donate')}}">Donate</a>
                     </li>
@@ -153,6 +153,7 @@
     <script src="{{secure_asset('js/bootstrap.js')}}"></script>
     <script src="{{ secure_asset('js/style.js') }}" ></script>
     <script src="{{ secure_asset('js/app.js') }}" ></script>
+    {{-- <script src="{{ mix('/js/app.js') }}"></script> --}}
 
     <script>
       sr.reveal('.bible_study', {

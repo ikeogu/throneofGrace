@@ -22,11 +22,11 @@
                                 <a href="{{route('E-store.index')}}" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Store <span class="badge">503</span>
                                 </a>
                                 <a href="{{route('testimony.index')}}" class="list-group-item current">
-                                        <span
-                                            class="glyphicon glyphicon-list-alt"></span> Testimonies <span
-                                            class="badge">{{App\Testimony::count()}}
-                                        </span>
-                                    </a>
+                                    <span
+                                        class="glyphicon glyphicon-list-alt"></span> Testimonies <span
+                                        class="badge">{{App\Testimony::count()}}
+                                    </span>
+                                </a>
                                 <a href="{{route('Gallery.index')}}" class="list-group-item current">
                                     <span
                                         class="glyphicon glyphicon-list-alt"></span> Gallery <span
@@ -62,50 +62,66 @@
                 </div>
                 <div class="col-md-9">
 
-                        <div class="panel panel-default">
-                                <div class="panel-heading main-color-bg">
-                                                <h3 class="panel-title">STORE</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading main-color-bg">
+                                        <h3 class="panel-title">All Testimonies</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" placeholder="Filter Users">
                                 </div>
-                                <div class="panel-body">
-                                                <div class="row">
-                                                                <div class="col-md-12">
-                                                                                <input class="form-control" type="text" placeholder="Filter Users">
-                                                                </div>
-                                                </div>
-                                                <br>
-                                                <table class="table table-strip table-hover">
-                                                                <tr>
-                                                                                <th>S/No</th>
-                                                                                <th>Title</th>
-                                                                                <th>Image</th>
-                                                                                
-                                                                                <th>Date</th>
-                                                                                <th>Action</th>
-                                                                </tr>
-                                                                @foreach ($image as $item)
-                                                                <tr>
-                                                                        <td>{{$item->id}}</td>
-                                                                        <td>{{$item->title}}</td>
-                                                                        
-                                                                        <td><img src="storage/public/GalleryImage/{{$item->image}}"></td>
-                                                                        
-                                                                        <td>{{$item->created_at->diffForHumans()}}</td>
-                                                                        <td><a class="btn btn-default" href="#">Edit</a>
-                                                                            <form action="{{ route('Gallery.destroy' , $item->id)}}" method="POST">
-                                                                                    <input name="_method" type="hidden" value="DELETE">
-                                                                                    {{ csrf_field() }}                                                       
-                                                                                        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
-                                                                                    
-                                                                            </form>
-                                                                        </td>
-                                                        </tr>			
-                                                                @endforeach
-                                                    
-                                                </table>
-                                </div>
+                            </div>
+                            <br>
+                            <table class="table table-strip table-hover">
+                                <tr>
+                                    <th>S/No</th>
+                                    <th>Name</th>
+                                    <th>Testimony</th>
+                                    <th>Phone</th>
+                                    
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Display</th>
+                                    <th>Action</th>
+                                </tr>
+                                @foreach ($test as $item)
+                                <tr>
+                                    <td>{{$item->id}}</td>
+                                    <td>{{$item->name}}</td>
+                                    
+                                    <td><p>{{$item->body}}</p></td>
+                                    <td>{{$item->phone}}</td>
+                                    
+                                    @if($item->status === 0)
+                                        <td>Private</td>
+                                    @elseif($item->status=== 1)
+                                    <td>Public</td>    
+                                    @endif
+                                    
+                                <td>{{$item->created_at->diffForHumans()}}</td>
+                                <td>
+                                        <a class="btn btn-info btn-fill" href="/testimonies/{{ $item->id}}">Publish</a>
+                                        <a class="btn btn-warning btn-fill" href="/testimonies_unpub/{{ $item->id}}">Unpublish</a>
+                                </td>
+                                <td><a class="btn btn-default" href="/testimony/{{ $item->id}}">Edit</a>
+                                        <form action="{{ route('testimony.destroy' , $item->id)}}" method="POST">
+                                                <input name="_method" type="hidden" value="DELETE">
+                                                {{ csrf_field() }}                                                       
+                                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                                                
+                                        </form>
+
+                                    </td>
+                                    
+                                    </tr>			
+                                @endforeach
+                                
+                            </table>
+                        </div>
+                    </div>    
                 </div>
 
-                </div>
             </div>
         </div>
     </section>

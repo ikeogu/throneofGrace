@@ -58,7 +58,9 @@ Route::get('/events/{keys}/edit','EventController@edit');
 Route::resource('/Gallery','GalleryController');
 Route::resource('prayer', 'PrayerPointController');
 Route::get('/prayers','PrayerPointController@index2')->name('pray');
-
+Route::resource('testimony', 'TestimonyController');
+Route::get('/testimonies/{key}','TestimonyController@pub');
+Route::get('/testimonies_unpub/{key}','TestimonyController@dispub');
 //paystack loader route
 
 Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay'); 

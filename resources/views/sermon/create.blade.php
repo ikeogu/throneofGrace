@@ -20,6 +20,12 @@
 							</a>
 							<a href="{{route('E-store.index')}}" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Store <span class="badge">{{App\Book::count()}}</span>
 							</a>
+							<a href="{{route('testimony.index')}}" class="list-group-item current">
+                                    <span
+                                        class="glyphicon glyphicon-list-alt"></span> Testimonies <span
+                                        class="badge">{{App\Testimony::count()}}
+                                    </span>
+                                </a>
 							<a href="{{route('Gallery.index')}}" class="list-group-item">
 								<span
 									class="glyphicon glyphicon-list-alt"></span> Gallery <span
