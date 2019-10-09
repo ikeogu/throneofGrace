@@ -54,7 +54,7 @@
 						Add To Gallery <span	class="badge">{{App\Gallery::count()}}</span>
 					</a>
 																											
-			</div>
+				</div>
       </div>
       <div class="col-md-9">
 				<!-- Website Overview -->

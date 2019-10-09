@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy refresh" content="upgrade-insecure-requests">
+    <meta name="Description" content="Throne of Power and fire Ministry. By Pastor Emma Ijigbo. A church website with E-store for prayer books">
+    <meta name="theme-color" content="blue"/>
+    <meta name="apple-mobile-web-app-capable " content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
+    <meta name="apple-mobile-web-app-title" content="Throne"/>
+    
+    <link rel="apple-touch-icon" href="./img/icons/152x152.png"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Throne Of Grace') }}</title>
-
+    <link rel="manifest" href="{{secure_asset('manifest.json')}}">
     <!-- Scripts -->
     
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-  
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}" />
-   
+
     
-  
+    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet"> 
+    
+    <script>
+      if ('serviceWorker' in navigator && 'PushManager' in window ) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+
+</script>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ secure_asset('css/fonts-icon.css') }}">
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
-
-    <script src="https://unpkg.com/scrollreveal@4"></script>
-    <script>
-      window.sr = ScrollReveal({
-        distance: '100px',
-        duration: 3000,
-        easing: 'ease',
-        mobile: true,
-        reset: true, 
-        scale: 1,
-        viewFactor: 0.1,
-      });
-    </script>
     
 </head>
 <body>
@@ -49,7 +50,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
               <div class="container-fluid">
                 <div class="row navbar-brand text-center">
-                    <img src="{{secure_asset('img/church/logo.jpeg')}}" height="50" width="50">
+                    <img src="{{secure_asset('img/church/logo.png')}}" height="50" width="50" alt="church logo">
                     <h4 class="tag">Throne of Power & Fire Ministries Int'l (INC)</h4>
                 </div>
               
@@ -87,7 +88,7 @@
                         <a class="nav-link" href="{{route('gal')}}">Gallery</a>
                       </li>
                     <li class="">
-                      <a class="btn btn-info" href="{{route('donate')}}">Donate</a>
+                      <a class="btn btn-info" href="{{route('don')}}">Donate</a>
                     </li>
                   </ul>
                 </div>
@@ -131,13 +132,13 @@
               <h3>Connect</h3>
               <div class="social">
                 <a href="https://www.facebook.com/emmaijiogbepastor">
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-facebook-f"> </i>.
                 </a>
                 <a href="https://www.twitter.com/@EIjiogbe">
-                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-twitter"> </i>.
                 </a>
                 <a href="https://www.gmail.com/pstemmaijiogbe">
-                  <i class="fab fa-google"></i>
+                  <i class="fab fa-google"></i>.
                 </a>
               </div>
             </div>
@@ -147,17 +148,25 @@
           </div>
         </div>
       </footer>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="{{secure_asset('js/bootstrap.js')}}"></script>
+      <script src="{{secure_asset('js/jquery.js')}}"></script>
+     <script src="{{secure_asset('js/popper.js')}}"></script>
+    <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
     <script src="{{ secure_asset('js/style.js') }}" ></script>
     <script src="{{ secure_asset('js/app.js') }}" ></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="{{ secure_asset('js/share.js') }}"></script>
+    <script src="{{ secure_asset('js/scrollreveal.js') }}"></script> 
+    <script>
+      window.sr = ScrollReveal({
+        distance: '100px',
+        duration: 3000,
+        easing: 'ease',
+        mobile: true,
+        reset: true, 
+        scale: 1,
+        viewFactor: 0.1,
+      });
+    </script>
+    
+    
     {{-- <script src="{{ mix('/js/app.js') }}"></script> --}}
 
     <script>
@@ -191,8 +200,7 @@
       sr.reveal('.gallery',{
         origin: 'left',
       });
-  
-  
-    </script>
+      </script>
+      
 </body>
 </html>

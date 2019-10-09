@@ -5,30 +5,30 @@
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/img/church/faith.jpg" class="d-block w-100" alt="..." />
+            <img src="/img/church/faith.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-md-block ">
               <h1 style="color:black;">Nobody in this World can Love you better than God</h1>
               <p><a href="#" class="btn btn-info btn-lg text-uppercase">Worship with us</a></p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/church/religion.jpg" class="d-block w-100" alt="..." />
+            <img src="/img/church/rel.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-md-block ">
-              <h1 style="color:black;">Peace I Give you not As of the World</h1>
+              <h1 style="color:black;">Peace I Give you, not as of the world gives.</h1>
               <p><a href="#" class="btn btn-info btn-lg text-uppercase">Worship with us</a></p>
             </div>
           </div>
           <div class="carousel-item">
-              <img src="/img/church/break.jpg" class="d-block w-100" alt="..." />
+              <img src="/img/church/break.png" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-md-block ">
                 <h1 style="color:black;">Deliverance and Breakthrough</h1>
                 <p><a href="#" class="btn-info btn-lg text-uppercase">Worship with us</a></p>
               </div>
           </div>
           <div class="carousel-item">
-            <img src="/img/slide1.jpg" class="d-block w-100" alt="..." />
+            <img src="/img/slide1.png" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-md-block ">
-              <h1 >Needing Jesus Christ Together</h1>
+              <h1 >Needing Jesus Christ together</h1>
               <p><a href="#" class="btn-info btn-lg text-uppercase">Worship with us</a></p>
             </div>
           </div>
@@ -67,7 +67,7 @@
           <div class="col-sm col-md-4 bible-qoute p-4">
             <i class="fas fa-comments fa-2x"></i>
             <h3>Get in touch</h3>
-            <p>Email: info@yoursite.com<br>
+            <p>Email: pstemmaijiogbe1@gmail.com<br>
               Phone: +2348093114646, +2348038404894</p>
           </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="row">
           <div class="col-sm col-md-6">
             <div class="container">
-              <img src="/img/church/about_3.jpg" alt="" class="img-fluid">
+              <img src="/img/church/about_3.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-sm col-md-6 px-5">
@@ -109,7 +109,7 @@
       </div>
     </section>
     
-
+æ
     <section class="sermons">
       <div class="heading">
         <h1>Latest sermons</h1>

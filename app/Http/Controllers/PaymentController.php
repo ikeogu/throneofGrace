@@ -24,10 +24,55 @@ class PaymentController extends Controller
     {
         return Paystack::getAuthorizationUrl()->redirectNow();
     }
-    // public function redirectToGateway2()
-    // {
-    //     return Paystack::getAuthorizationUrl()->redirectNow();
-    // }
+    public function pay(Request $request)
+    {
+        //dd($request->all());
+        $request->amount =$request->amount * 100;
+       
+        $request->metadata = $request->all();
+        return Paystack::getAuthorizationUrl()->redirectNow();
+            // $result = array();
+
+            //     //Set other parameters as keys in the $postdata array
+            //     $postdata =  array(
+            //     'amount'=>$request->amount,       // in kobo
+            //     'email'=>$request->email,         // unique to customers
+            //     'reference'=>$request->reference, // unique to transactions
+            //     'full_name'=>$request->name,
+            //     'preffered' =>$request->preferred,
+            //     'callback_url'=>$request->callback_url,
+                
+            //     );
+            
+            //     var_dump($postdata );
+            //     $url = "https://api.paystack.co/transaction/initialize";
+                
+            //     $ch = curl_init();
+            //     curl_setopt($ch, CURLOPT_URL,$url);
+            //     curl_setopt($ch, CURLOPT_POST, 1);
+            //     curl_setopt($ch, CURLOPT_POSTFIELDS,json_encode($postdata));  //Post Fields
+            //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                
+            //     $headers = [
+            //     'Authorization: Bearer '.$key,
+            //     'Content-Type: application/json',
+                
+            //     ];
+            //     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+                
+            //     $request = curl_exec ($ch);
+                
+            //     curl_close ($ch);
+                
+                // if ($request) {
+                // $result = json_decode($request, true);
+                // //print_r($request);
+                // echo $result['data']['authorization_url'];
+                // header('Location: ' . $result['data']['authorization_url']);
+                //}
+            
+        // return Paystack::getAuthorizationUrl()->redirectNow();
+    }
 
     /**
      * Obtain Paystack payment information
@@ -64,8 +109,8 @@ class PaymentController extends Controller
         }
         
     }
-    public function pay(){
-        echo  $request->email;
+    // public function pay(){
+    //     echo  $request->email;
         
     // if(isset($_POST['name']) && isset($_POST['amount'])  && isset($_POST['email'])){
   
@@ -116,5 +161,5 @@ class PaymentController extends Controller
     //         // header('Location: ' . $result['data']['authorization_url']);
     //         }
     //     }
-    }
+    //}
 }

@@ -25,28 +25,28 @@
                 @else
                 <div class="row my-1 justify-content-center">
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/about_3.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/about_3.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/about.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/about.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/image_1.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/image_1.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/sermon_3.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/sermon_3.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/sermon_2.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/sermon_2.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/sermon_1.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/sermon_1.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/image_2.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/image_2.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                     <div class="col-sm col-md-3 my-2">
-                        <img src="/img/church/img_3.jpg" alt="" class="img-fluid">
+                        <img src="/img/church/img_3.jpg" alt="_gallery1" class="img-fluid">
                     </div>
                 </div>
                 @endif

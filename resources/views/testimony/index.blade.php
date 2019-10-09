@@ -104,7 +104,7 @@
                                         <a class="btn btn-info btn-fill" href="/testimonies/{{ $item->id}}">Publish</a>
                                         <a class="btn btn-warning btn-fill" href="/testimonies_unpub/{{ $item->id}}">Unpublish</a>
                                 </td>
-                                <td><a class="btn btn-default" href="/testimony/{{ $item->id}}">Edit</a>
+                                <td><a class="btn btn-default" href="/testimony/{{$item->id}}/edit">Edit</a>
                                         <form action="{{ route('testimony.destroy' , $item->id)}}" method="POST">
                                                 <input name="_method" type="hidden" value="DELETE">
                                                 {{ csrf_field() }}                                                       
@@ -121,7 +121,7 @@
                         </div>
                     </div>    
                 </div>
-
+                {{$test->links()}}
             </div>
         </div>
     </section>

@@ -18,7 +18,7 @@
                     @foreach ($event as $item)
                     <div class="col-sm col-md-3">
                             <div class="container">
-                            <img src="/storage/event/{{$item->image}}" alt="" class="img-fluid">
+                            <img src="/storage/event/{{$item->image}}" alt="event" class="img-fluid">
                             </div>
                         </div>
                         <div class="col-sm col-md-6">

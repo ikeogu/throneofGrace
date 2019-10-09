@@ -11,6 +11,7 @@ class AdminController extends Controller
     {
         $this->middleware('auth');
     }
+    
     public function index(){
         $sermon = Sermon::all();
         return view('sermon/index',['sermon'=>$sermon]);

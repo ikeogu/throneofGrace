@@ -36,7 +36,7 @@
               <div class="modal-content">
                 <div class="modal-header justify-content-between row">
                     <div class="col-3">
-                        <img src="{{asset('img/church/logo.jpeg')}}" height="65" width="60"  id="img1">
+                        <img src="{{asset('img/church/logo.jpeg')}}" height="65" width="60"  id="img1" alt="hello">
                     </div>
                     <div class="col-6">
                         <h5 class="modal-title" id="exampleModalLongTitle" class="my"> One Time Payment </h5>
@@ -45,7 +45,7 @@
                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                         <img src="{{asset('img/church/pay.png')}}" height="65" width="60" id="img2">
+                         <img src="{{asset('img/church/pay.png')}}" height="65" width="60" id="img2" alt="zero">
                     </div>
                    
                 </div>
@@ -68,7 +68,7 @@
                              
                             <input type="hidden" name="amount" value="{{$ppt->price * 110}}"> {{-- required in kobo --}}
                             <input type="hidden" name="callback_url" value="{{route('call')}}">
-                        <input type="hidden" name="metadata" value="{{ json_encode($array = ['title' => $ppt->topic,'ppt_id'=> $ppt->id,]) }}" required class="form-group form-control"> {{-- For other necessary things you want to add to your payload. it is optional though --}}
+                            <input type="hidden" name="metadata" value="{{ json_encode($array = ['title' => $ppt->topic,'ppt_id'=> $ppt->id,]) }}" required class="form-group form-control"> {{-- For other necessary things you want to add to your payload. it is optional though --}}
                             <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
                             <input type="hidden" name="key" value="{{ config('paystack.secretKey') }}"> {{-- required --}}
                             {{ csrf_field() }} {{-- works only when using laravel 5.1, 5.2 --}}

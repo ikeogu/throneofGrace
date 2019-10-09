@@ -98,9 +98,9 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gallery $gallery)
+    public function update(Request $request, $gallery)
     {
-        Gallery::whereId($gallery->id)->update($request->except(['_method','_token']));
+        Gallery::whereId($gallery)->update($request->except(['_method','_token']));
         return redirect(route('Gallery.index'))->with('success', 'Image Updated');
     }
 

@@ -3,8 +3,8 @@
         <section class="gallery-landing">
             <div class="container-fluid p-0">
                 <div class="jumbotron bg-done">
-                    <h1>Praise God with your resources</p>
-                    <p class="h4"> Help move the work of God forward</p>
+                    <h1>Remain blessed as you contribute</p>
+                    <p class="text-dark"> Give it shall be given unto you good measures....</p>
                 </div>
             </div>
         </section>
@@ -23,17 +23,18 @@
                         <h4 class="p-2 text-dark">
                             <ul>
                                 <li>Account Number (Current): 2016285457 </li>
-                                <li>Account Name: Throne of Power and Fife Ministry Int’l
+                                <li>Account Name: Throne of Power and Fire Ministry Int’l
                                     </li>
                                 <li>Bank: First Bank PLC</li>
                             </ul>
                         </h4>
 
                     </div>
-                    
+                    <hr>
                     <div class="col-lg-5">
-                        <form  accept-charset="UTF-8" class="form-horizontal" role="form">
-                            <h6 class="text-dark">Heaven will reward you as you promote God's work</h6>
+                        <h4>OR</h4>
+                    <form   method="POST" action="{{route('pays')}}" accept-charset="UTF-8" class="form-horizontal" id="form">
+                            <h6 class="text-dark">Make Online Payment </h6>
 
                             <div class="form-group">
                                 <label>Full Name</label>
@@ -61,14 +62,17 @@
                                 </select>
                             </div>
                         
-                            
+                            <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+                            <input type="hidden" name="key" value="{{ config('paystack.secretKey') }}"> {{-- required --}}
                             {{ csrf_field() }} {{-- works only when using laravel 5.1, 5.2 --}}
                 
+                               
+                            <input type="hidden" name="callback_url" value="/donation/callback" >
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" data-token=""> {{-- employ this in place of csrf_field only in laravel 5.0 --}}
                 
                 
                             <div class="form-group">
-                                <button class="btn btn-info btn-md btn-block" id="pay" value="Pay Now!">
+                                <button class="btn btn-info btn-md btn-block"  type="submit" value="Pay Now!">
                                 <i class="fa fa-plus-circle fa-lg"></i> Pay Now!
                                 </button>
                             </div>

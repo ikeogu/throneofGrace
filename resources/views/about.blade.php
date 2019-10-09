@@ -15,7 +15,7 @@
                 <div class="row justify-content-center my-5">
                     <div class="col-sm-4 col-md-4">
                         <div class="container">
-                            <img src="/img/church/about_3.jpg" alt="" class="img-fluid">
+                            <img src="/img/church/about_3.jpg" alt="about" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-sm-8 col-md-8">

@@ -111,10 +111,10 @@ class BookController extends Controller
      * @param  \App\Book  $book
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Book $book)
+    public function update(Request $request, $book)
     {
          
-        Book::whereId($book->id)->update($request->except(['_method','_token']));
+        Book::whereId($book)->update($request->except(['_method','_token']));
         return redirect(route('E-store.index'))->with('success', 'Book Updated');
     }
 

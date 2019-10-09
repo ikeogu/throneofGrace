@@ -39,7 +39,7 @@ Route::get('/book/{key}', 'BookController@pptbook')->name('pptbook');
 
 Route::get('/donate', function () {
     return view('donate');
-})->name('donate');
+})->name('don');
 
 
 
@@ -66,7 +66,9 @@ Route::get('/testimonies_unpub/{key}','TestimonyController@dispub');
 Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay'); 
 //Route::post('/payppt', 'PaymentController@redirectToGateway2')->name('payppt');
 
-Route::post('/pays', 'PaymentController@pay')->name('pays');
+Route::post('/pays', 'DonationController@pay')->name('pays');
+Route::get('/donation/callback', 'DonationController@handleGatewayCallback')->name('donate');
+
 Route::get('/payment/callback', 'PaymentController@handleGatewayCallback')->name('call');
 //magic function
 Route::get('/E-books','BookController@vex')->name('view');
@@ -77,3 +79,5 @@ Route::get('/download/{id}','BookController@download')->name('download');
 Route::get('/downloads__/{id}','PrayerPointController@download')->name('downloadppt');
 
 Route::get('/testi/{key}','TestimonyController@show')->name('test')->middleware('signed');
+
+Route::get('/thank_you','DonationController@thanks')->name('thank_you');

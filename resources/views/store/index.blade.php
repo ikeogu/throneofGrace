@@ -95,29 +95,29 @@
 								</div>
 
 								<div class="row">
-										@if ($message = Session::get('success'))
+									@if ($message = Session::get('success'))
 
-														<div class="alert alert-success alert-block">
+										<div class="alert alert-success alert-block">
 
-																		<button type="button" class="close" data-dismiss="alert">×</button>
+											<button type="button" class="close" data-dismiss="alert">×</button>
 
-																		<strong>{{ $message }}</strong>
+											<strong>{{ $message }}</strong>
 
-														</div>
+										</div>
 
-										@endif
+									@endif
 
-										@if (count($errors) > 0)
-														<div class="alert alert-danger">
-																		<strong>Whoops!</strong> There were some problems with your input.<br><br>
-																		<ul>
-																						@foreach ($errors->all() as $error)
-																										<li>{{ $error }}</li>
-																						@endforeach
-																		</ul>
-														</div>
-										@endif
-						</div>
+									@if (count($errors) > 0)
+										<div class="alert alert-danger">
+											<strong>Whoops!</strong> There were some problems with your input.<br><br>
+											<ul>
+												@foreach ($errors->all() as $error)
+													<li>{{ $error }}</li>
+												@endforeach
+											</ul>
+										</div>
+									@endif
+								</div>
 								<!-- Website Overview -->
 								<div class="panel panel-default">
 												<div class="panel-heading main-color-bg">
@@ -152,10 +152,10 @@
 																						<td>{{$item->pages}}</td>
 																						<td>#{{$item->price}}</td>
 																						<td>{{$item->category}}</td>
-																						<td><img src="storage/public/bookImage/{{$item->image}}"></td>
+																						<td><img src="/storage/bookImage/{{$item->image}}"></td>
 																						<td>{{$item->content}}</td>
 																						<td>{{$item->created_at->diffForHumans()}}</td>
-																						<td><a class="btn btn-default" href="#">Edit</a>
+																				<td><a class="btn btn-default" href="/E-store/{{$item->id}}/edit">Edit</a>
 																							<form action="{{ route('E-store.destroy' , $item->id)}}" method="POST">
 																								<input name="_method" type="hidden" value="DELETE">
 																								{{ csrf_field() }}                                                       

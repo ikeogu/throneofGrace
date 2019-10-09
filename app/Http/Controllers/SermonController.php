@@ -105,10 +105,10 @@ class SermonController extends Controller
      * @param  \App\Sermon  $sermon
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sermon $sermon)
+    public function update(Request $request, $sermon)
     { 
         
-        Sermon::whereId($sermon->id)->update($request->except(['_method','_token']));
+        Sermon::whereId($sermon)->update($request->except(['_method','_token']));
          return redirect(route('sermons.index'))->with('success', 'Sermon Updated');
     }
 

@@ -2,41 +2,11 @@
 @section('content')
         <section class="gallery-landing">
             <div class="container-fluid p-0">
-                <div class="jumbotron bg-contact">
+                <div class="jumbotron bg-name">
                     <h1> Testimonies</h1>
                     <p>Testimonies of the Lord's Doing</p>
                 </div>
-                <section class="gallery-img my-5">
-                    <div class="container">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-                                <div class="d-flex w-100 justify-content-between jumbotron">
-                                <h3 class="mb-1">Testimonies</h3>
-                                
-                                </div>
-                                
-                            </a>
-                            <div class="d-flex w-100 justify-content-between py-3">
-                                    
-                                <table class="table table-stripped,  row scrollable text-dark">
-                                    <tr class="col col-lg-12 col-sm-9 col-md-9">
-                                        <th>Name</th>
-                                        <th>Testimony</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    @foreach ($test as $item)
-                                        <tr class="col col-lg-12 col-sm-9 col-md-9">
-                                        <td> <strong><a href="/testimony/{{$item->id}}">{{$item->name}}</a></strong></td>
-                                            <td> <p class="text-dark">{{$item->body}}</p></td>
-                                            <td><a class="btn btn-fill btn-info" href="/testimony/{{$item->id}}"><strong> more</strong></a></td>
-                                        </tr>
-                                    @endforeach        
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    {{$test->links()}}
-                </section>
+                
                 <div>
                     @if ($message = Session::get('success'))
         
@@ -79,7 +49,7 @@
                
             <form  action="{{route('testimony.update',[$test->id])}}">
                     @csrf
-                    {{method_field()}}
+                    {{method_field('PUT')}}
                         <div class="row text-center mt-5">
                             <div class="col-sm col-md-4">
                                 <input type="text" value="{{$test->name}}" name="name" >
@@ -95,10 +65,12 @@
                             <div class="col-sm col-md-4">
                                 <label for="">Make Testimony</label>
                                 <select name="status" class="form-control">
-                                    @if({{$test->status}}=== 0)
+                                    @if($test->status === 0)
                                     <option value="0">Private</option>
-                                    @elseif({{$test->status}} === 1)
+                                    @elseif($test->status === 1)
                                     <option value="1">Public</option>
+                                    @else
+                                    <option value="2">Published</option>
                                     @endif
                                 </select>
                             </div>

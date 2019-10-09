@@ -2,16 +2,16 @@
 @section('content')
     <section class="gallery-landing">
         <div class="container-fluid p-0">
-            <div class="jumbotron bg-store">
-                <h1  style="color:azure;"> Our E-Store</h1>
-                <p class="h4 text-center" style="color:azure;">Spiritual prayer guides</p>
+            <div class="jumbotron donate">
+                <h1  style="color:azure;">A Big Thank You!!! </h1>
+                <p class="h4 text-center" style="color:azure;">We are Greatful</p>
             </div>
         </div>
     </section>
 
     <section class="gallery-img my-5">
-        <div class="container">
-                <h3 class="text-success">Thanks for Purchasing .... <br >Click on Download to have your Copy</h3>
+        <div class="container jumbotron">
+                
 
             <div class="card">
                 <div class="row card-body">
@@ -35,22 +35,9 @@
                             </div>
                         @endif
                     </div>
-                    <div class="col-12">
-                    <img src="/storage/bookImage/{{$book->image}}" height="350" width="350" alt="you">
-                    </div>
-                    <div class="col-12">
-                        <div class="text-center card-title">
-                            <h6 >Title : {{$book->title}}</h6>
-                           
-                            <h6 >Author : {{$book->author}}</h6>
-                            <h6 >Pages : {{$book->pages}}</h6>
-                            
-                        </div>
-                        <a href="{{route('download',[$book->id])}}" class="btn btn-success" >Download  </a>
-                                 
-                    </div>
+                    
                 </div>
-
+                <h3 class="text-success">Thanks, for Your Kind gesture is deeply appreciated <br >God bless you. Amen</h3>
             </div>
         </div>
     </section> 

@@ -29,14 +29,14 @@
                                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
                                 <ul>
                                     @foreach ($errors->all() as $error)
-                                                    <li>{{ $error }}</li>
+                                        <li>{{ $error }}</li>
                                     @endforeach
                                 </ul>
                             </div>
                         @endif
                     </div>
                     <div class="">
-                    <img src="/storage/bookImage/{{$book->image}}" height="170" width="120">
+                    <img src="/storage/bookImage/{{$book->image}}" height="170" width="120" alt="{{$book->title}}">
                     </div>
                     <div class="col-12">
                         <div class="text-center card-title">
@@ -66,14 +66,14 @@
                 </button>
             <div class="modal-header justify-content-between row">
                 <div class="col-3">
-                    <img src="{{asset('img/church/logo.jpeg')}}" height="65" width="60"  id="img1">
+                    <img src="{{asset('img/church/logo.jpeg')}}" height="65" width="60"  id="img1" alt="logo">
                 </div>
                 <div class="col-6">
                     <h5 class="modal-title" id="exampleModalLongTitle" class="my"> One Time Payment </h5>
                 </div>
                 <div class="col-3">
                         
-                        <img src="{{asset('img/church/pay.png')}}" height="80" width="80" id="img2">
+                        <img src="{{asset('img/church/pay.png')}}" height="80" width="80" id="img2" alt="paystacK_logo">
                 </div>
                 
             </div>

@@ -20,7 +20,7 @@
             <div class="container-fluid mb-5">
                 <div class="row justify-content-center bg-ligh p-5">
                     <div class="col-sm-6 col-md-6 p-0">
-                        <img src="/storage/sermon/{{$item->image}}" alt="" class="img-fluid" width="100%">
+                        <img src="/storage/sermon/{{$item->image}}" alt="" class="img-fluid" width="100%" alt="{{$item->caption}}">
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <div class="container topic">

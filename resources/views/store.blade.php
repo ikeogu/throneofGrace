@@ -17,7 +17,7 @@
                     @foreach ($book as $item)
                         <div class="col-sm col-md-3 my-2">
                             <div class="card">
-                                <img src="/storage/bookImage/{{$item->image}}" alt="" height="170">
+                                <img src="/storage/bookImage/{{$item->image}}" alt="store" height="170">
                                 <div class="card-body">
                                     <h4>{{$item->title}}</h4>
                                     <hr>

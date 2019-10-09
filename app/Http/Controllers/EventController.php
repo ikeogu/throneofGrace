@@ -109,9 +109,9 @@ class EventController extends Controller
      * @param  \App\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Event $event)
+    public function update(Request $request, $event)
     {
-        Event::whereId($event->id)->update($request->except(['_method','_token']));
+        Event::whereId($event)->update($request->except(['_method','_token']));
          return redirect(route('Events.index'))->with('success', 'Event Updated');
     }
 

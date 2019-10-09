@@ -3,8 +3,8 @@
         <section class="gallery-landing">
             <div class="container-fluid p-0">
                 <div class="jumbotron bg-band">
-                    <h2  class="text-dark">PROPHETIC INTERCESSARY PRAYER BAND</h2>
-                    <p class="h4 text-center text-dark" >This group is a Holy Spirit, selected and trained brethren .</p>
+                    <h2  class="text-white">PROPHETIC INTERCESSARY PRAYER BAND</h2>
+                    <p class="h4 text-center text-white" >This group is a Holy Spirit, selected and trained brethren .</p>
                 </div>
             </div>
         </section>
@@ -20,7 +20,7 @@
                     </p>
                     <hr>
                     <h4> <strong> PLEASE SEND IN YOUR PRAYER REQUEST THROUGH:</strong> </h4>
-                       <p>
+                       <p class="text-dark">
                             <strong>
                                 <ul>
                                     <li>E-mail: tpfmintercessoryprayerband@gmail.com</li>
@@ -31,10 +31,10 @@
                             </strong>
                         </p>
                     <hr>
-                    <p> <strong> Our Support Account No: 2016285457 --- Current --- First Bank Plc
+                    <p class="text-dark"> <strong> Our Support Account No: 2016285457 --- Current --- First Bank Plc
                         </strong>
                     </p>
-                    <p>--- Acct Name: Throne of Power and Fire Ministry Int’l
+                    <p class="text-dark">--- Acct Name: Throne of Power and Fire Ministry Int’l
                     </p>
                 </div>
 
